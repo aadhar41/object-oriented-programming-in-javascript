@@ -9,4 +9,15 @@ function createCircle(radius) {
 }
 
 const circle = createCircle(5);
-circle.draw();
+
+// -------------------
+
+// Constructor Function
+function Circle(radius) {
+    this.radius = radius;
+    this.draw = function (params) {
+        console.log('draw');
+    }
+}
+
+const another = new Circle(1);
